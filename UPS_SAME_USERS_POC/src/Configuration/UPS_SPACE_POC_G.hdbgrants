@@ -1,0 +1,20 @@
+{
+    "UPS_SPACE_POC_G": {
+       "object_owner": {
+          "schema_privileges": [
+             {
+                "reference": "SAPHANADB",
+                "privileges_with_grant_option":[ "SELECT", "SELECT METADATA", "CREATE ANY", "ALTER", "DEBUG", "CREATE OBJECT STRUCTURED PRIVILEGE"  ]
+             }
+          ]
+       },
+       "application_user": {
+          "schema_privileges": [
+             {
+                "reference": "SAPHANADB",
+                "privileges": [ "SELECT", "SELECT METADATA", "CREATE ANY", "ALTER", "DEBUG", "CREATE OBJECT STRUCTURED PRIVILEGE" ]
+             }
+          ]
+       }
+    }
+}

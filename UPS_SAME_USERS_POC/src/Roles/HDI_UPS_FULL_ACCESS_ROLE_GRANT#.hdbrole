@@ -1,0 +1,14 @@
+{
+    "role": {
+                   "name": "HDI_UPS_FULL_ACCESS_ROLE_GRANT#",
+                   "schema_privileges": [
+                                  {
+                                                 "privileges_with_grant_option": [
+                                                                "SELECT",
+                                                                "SELECT METADATA",
+                                                                "CREATE OBJECT STRUCTURED PRIVILEGE"
+                                                ]
+                                  }
+                   ]
+    }
+  }

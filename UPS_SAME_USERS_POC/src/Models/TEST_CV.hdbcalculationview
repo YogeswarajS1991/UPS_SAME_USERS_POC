@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="TEST_CV" applyPrivilegeType="NONE" dataCategory="CUBE" schemaVersion="3.0" hierarchyGeneration="SQL" outputViewType="Aggregation" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="TEST_CV.hdbcalculationview"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="INVENTORY1">
+    <resourceUri>INVENTORY1</resourceUri>
+  </DataSource>
+</dataSources>
+<snapshotProcedures/>
+<calculationViews/>
+<logicalModel id="INVENTORY1">
+  <attributes>
+    <attribute id="PRODUCT" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRODUCT"/>
+      <keyMapping columnObjectName="INVENTORY1" columnName="PRODUCT"/>
+    </attribute>
+    <attribute id="PRODUCTDESCRIPTION" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRODUCTDESCRIPTION"/>
+      <keyMapping columnObjectName="INVENTORY1" columnName="PRODUCTDESCRIPTION"/>
+    </attribute>
+    <attribute id="MATERIALDESCRIPTION" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MATERIALDESCRIPTION"/>
+      <keyMapping columnObjectName="INVENTORY1" columnName="MATERIALDESCRIPTION"/>
+    </attribute>
+    <attribute id="DESTINATIONCOUNTRY" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DESTINATIONCOUNTRY"/>
+      <keyMapping columnObjectName="INVENTORY1" columnName="DESTINATIONCOUNTRY"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures>
+    <measure id="MATERIAL" order="3" aggregationType="count" measureType="simple" restrictionExpressionLanguage="SQL">
+      <descriptions defaultDescription="MATERIAL"/>
+      <measureMapping columnObjectName="INVENTORY1" columnName="MATERIAL"/>
+      <exceptionAggregationMetadata/>
+    </measure>
+  </baseMeasures>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+  <localDimensions/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>
